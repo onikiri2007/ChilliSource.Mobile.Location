@@ -5,7 +5,6 @@ using System.Text.RegularExpressions;
 // ADDINS
 //////////////////////////////////////////////////////////////////////
 
-#addin "Cake.FileHelpers"
 #addin nuget:?package=Newtonsoft.Json
 //////////////////////////////////////////////////////////////////////
 // TOOLS
@@ -135,6 +134,7 @@ if(string.IsNullOrEmpty(isCI))
 Func<string> GetMSBuildLoggerArguments = () => {
     return BuildSystem.TeamCity.IsRunningOnTeamCity ? EnvironmentVariable("MsBuildLogger"): null;
 };
+
 
 Action Abort = () => { throw new Exception("A non-recoverable fatal error occurred."); };
 Action<string> TestFailuresAbort = testResult => { throw new Exception(testResult); };

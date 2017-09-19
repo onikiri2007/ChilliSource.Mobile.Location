@@ -1,5 +1,9 @@
 <Project>
   <PropertyGroup>
+    <Description>Logging Library for ChilliSource.Mobile framework</Description>
+    <RepositoryUrl>https://github.com/BlueChilli/ChilliSource.Mobile.Logging</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/BlueChilli/ChilliSource.Mobile.Logging/blob/master/LICENSE</PackageLicenseUrl>
+    <SourceLinkUrl>https://github.com/BlueChilli/ChilliSource.Mobile.Logging</SourceLinkUrl>
     <NoWarn>$(NoWarn);1591</NoWarn>
     <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
     <Platform>AnyCPU</Platform>
